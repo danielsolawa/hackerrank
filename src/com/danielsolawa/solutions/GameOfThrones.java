@@ -9,10 +9,10 @@ import java.util.regex.*;
 public class GameOfThrones {
 	
 	public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String s = in.next();
-        String result = gameOfThrones(s);
-        System.out.println(result);
+         Scanner in = new Scanner(System.in);
+         String s = in.next();
+         String result = gameOfThrones(s);
+         System.out.println(result);
     }
 	
     private static String gameOfThrones(String s){
@@ -20,14 +20,14 @@ public class GameOfThrones {
 		 int i = 0;
 	
 		 while(i < s.length()) {
-			 String currentLetter = String.valueOf(s.charAt(i));
-			 String temp = s.replaceAll(currentLetter, "");
+			String currentLetter = String.valueOf(s.charAt(i));
+			String temp = s.replaceAll(currentLetter, "");
 			 
-			 int difference = s.length() - temp.length();
+			int difference = s.length() - temp.length();
 			 
-			 if(!(difference % 2 == 0)) {
-				 lettersWithoutPair++; 
-			 }
+			if(!(difference % 2 == 0)) {
+				lettersWithoutPair++; 
+			}
 			 
 			 if(lettersWithoutPair > 1) {
 				 return "NO";

@@ -12,14 +12,4 @@ public class ArrayMaximalAdjacentDifference {
 		return max;
 	}
 	
-	
-	boolean isIPv4Address(String inputString) {
-		String[] numbers = inputString.split("\\.");
-		
-		if(numbers.length != 4)
-			return false;
-		
-		
-		return false;
-	}
 }
